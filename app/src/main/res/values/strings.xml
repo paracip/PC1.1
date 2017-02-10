@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PC1.1</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="PECfest"><a href="http://www.pecfest.in">PECfest FB Page</a></string>
+    <string name="Website"><a href="http://www.pec.ac.in">Official Website of PEC</a></string>
+    <string name="Alumni"><a href="http://www.pecalumni.com">Alumni for your startup ideas</a></string>
+    <string name="Alumni1"><a href="http://www.alumni.pec.ac.in">Mentorship for projects by Alumni</a></string>
+    <string name="QuestionPapers"><a href="http://www.hackpec.com">Previous Year Question papers</a></string>
+    <string name="Payment"><a href="http://www.onlinesbi.com/prelogin/institutiontypedisplay.htm">SBI Payment Portal</a></string>
+    <string name="title_activity_maps">Map</string>
+</resources>

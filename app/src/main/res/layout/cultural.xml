@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:background="#000"
+    android:layout_height="fill_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_cultural"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="1300dp">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:layout_height="1300dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:id="@+id/dramatics2"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/dramatics"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentEnd="true"
+            android:onClick="dramaticson" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:id="@+id/music2"
+            android:background="@drawable/music"
+            android:layout_below="@+id/dramatics2"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="musicon" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:id="@+id/saasc2"
+            android:background="@drawable/saasc"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/music2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:onClick="saascon" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:id="@+id/pdc2"
+            android:background="@drawable/pdc"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/saasc2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="pdcon" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:background="@drawable/apc"
+            android:id="@+id/apc2"
+            android:layout_below="@+id/pdc2"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:onClick="apcon" />
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

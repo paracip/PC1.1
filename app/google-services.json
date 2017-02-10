@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "927331518376",
+    "firebase_url": "https://pecconnect-d2c5f.firebaseio.com",
+    "project_id": "pecconnect-d2c5f",
+    "storage_bucket": "pecconnect-d2c5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927331518376:android:227be06cb1cbbd3b",
+        "android_client_info": {
+          "package_name": "com.example.gs.pc11"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "927331518376-g4hb13tdcj9hj4o1hsku22bq5dqn3845.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvFC1rYUqmkLbmXNdYg--rOLJNAoGx37U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

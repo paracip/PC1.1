@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="3dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="0dp"
+    tools:context="com.example.android.pc.MainActivity"
+    android:background="#141313">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_eic"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="223dp"
+        android:id="@+id/imageView"
+        android:layout_marginTop="63dp"
+        android:background="@drawable/eic22"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_below="@+id/imageView">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="About"
+                android:paddingBottom="3dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingTop="3dp"
+                android:id="@+id/textView2"
+                android:layout_below="@+id/imageView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/space" />
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Entrepreneurship form the backbone of the nation's economy and in order to strengthen entrepreneurship ecosystem, educational institutions must work on igniting the ideology of starting own ventures amongst India's youth. The youth of today needs to be more inclined towards creating jobs rather than getting one. Therefore, to assist the youth to become self-employed and create employment opportunities. Therefore, for this purpose, a full-fledged Entrepreneurship and Incubation Cell (EIC) at PEC has been setup which will work as a catalyst for entreprenuership."
+            android:id="@+id/eic_content"
+            android:textColor="#ffffff"
+            android:paddingBottom="3dp"
+            android:autoLink="phone"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="3dp"
+            android:layout_below="@+id/space"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="CONTACT"
+                android:id="@+id/texx"
+                android:textColor="#ffffff"
+                android:paddingBottom="3dp"
+                android:autoLink="phone"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingTop="13dp"
+                android:layout_below="@+id/space"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="304dp"
+                android:layout_height="wrap_content"
+                android:text="Dr. Anju Singla (Coordinator): +919872817577"
+                android:id="@+id/eic_contact"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ffffff"
+                android:autoLink="phone"
+                android:layout_below="@+id/textView3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="3dp"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.example.android.pc.MainActivity"
+    android:background="#cfcfcf">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_sesi"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/imageView"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/sesi1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_below="@+id/imageView"
+        android:id="@+id/scrollView"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageView"
+            android:layout_marginLeft="7dp"
+            android:layout_centerHorizontal="true"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="About"
+                android:id="@+id/textView2"
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/imageView"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="0dp"
+                android:layout_alignParentStart="true"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/space" />
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Solar Energy Society of India (SESI) was established in 1976 and has its Secretariat at New Delhi. It provides a common ground to all those concerned with nature and utilization of solar energy as a renewable non polluting resource. "
+            android:id="@+id/sesi_content"
+            android:textColor="#000000"
+                android:layout_marginLeft="0dp"
+                android:layout_below="@+id/space"
+            android:layout_toRightOf="@+id/textView4"
+            android:layout_toEndOf="@+id/textView4"
+            android:layout_marginTop="5dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/space1234" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="CONTACT"
+            android:layout_marginLeft="0dp"
+            android:id="@+id/textView3"
+            android:textColor="#000000"
+            android:layout_alignBottom="@+id/scrollView"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="55dp" />
+            <TextView
+                android:layout_width="335dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Tarun Goel - +91 8968388528"
+                android:layout_marginLeft="0dp"
+                android:id="@+id/sesi_contact"
+                android:autoLink="phone"
+                tools:textColorLink="@color/colorBackground"
+                android:textColor="#000000"
+                android:layout_alignBottom="@+id/scrollView"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="-50dp"
+                android:layout_marginBottom="80dp"
+
+                android:layout_weight="0.30" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+

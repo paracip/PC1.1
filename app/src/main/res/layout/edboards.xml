@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:background="#000"
+    android:layout_height="fill_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_edboard"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="fill_parent"
+    android:background="#000"
+    android:layout_width="fill_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:layout_height="match_parent"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        tools:context="com.example.android.pc.MainActivity"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Hindi Editorial Board"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/textView9"
+            android:background="@android:color/background_dark"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/imageButton"
+            android:background="@drawable/hindu1"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:text="Expressing love for the language – Writing great poems and articles is the way for it. Hindi Editorial Board gives you the opportunity and the motivation to do the rightful. HEB comprising of passion filled young students from the college takes care that the love for language never becomes old."
+            android:layout_width="wrap_content"
+            android:layout_height="112dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/hindied"
+            android:textColor="@android:color/background_light"
+            android:background="@android:color/background_dark" />
+
+        <TextView
+            android:text="English Editorial Board"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/background_dark"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/imageButton2"
+            android:background="@drawable/english1"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:text="And BTW, everything in life is writable about if you have the outgoing guts to do it, and the imagination to improvise. We are a group of free-minded people who are passionate about the English language and writing. We are responsible for the publication of the PECMag, the official magazine of PEC and the annual Souvenir for graduating students."
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/englished"
+            android:background="@android:color/background_dark"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+        android:text="Punjabi Editorial Board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:background="@android:color/background_dark"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/imageButton3"
+            android:background="@drawable/pnb1"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:text="Punjabi Editorial Board provides a platform to indulge in Punjabi culture by its writings, bhangra and plays. The power of writings infuses life to PECMag and newsletter. Bhangra performances in Bhangra Theque and other events fill PEC’s atmosphere with colorfullness and enthusiasm. It promotes Punjabi culture and creates awareness about its past which is now under adverse effects of drug addiction"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/punjabied"
+            android:background="@android:color/background_dark"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

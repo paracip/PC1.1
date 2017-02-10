@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_menu_links"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="@drawable/links"
+        android:id="@+id/imageView2"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text=" Click on the links below to Navigate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        android:textStyle="normal|bold"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="21dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/imageView2"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView12"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:text="@string/Website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView19"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="4dp"
+            android:textSize="20sp"
+            android:autoLink="all"
+            android:linksClickable="true"/>
+
+        <TextView
+            android:text="@string/Payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView20"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="4dp"
+            android:layout_below="@+id/textView19"
+            android:textSize="20sp"
+            android:autoLink="all"
+            android:linksClickable="true"/>
+
+        <TextView
+            android:text="@string/QuestionPapers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView21"
+            android:layout_below="@+id/textView20"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="4dp"
+            android:autoLink="all"
+            android:linksClickable="true"/>
+
+        <TextView
+            android:text="@string/Alumni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView22"
+            android:layout_below="@+id/textView21"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="4dp"
+            android:textSize="20sp"
+            android:autoLink="all"
+            android:linksClickable="true"/>
+
+        <TextView
+            android:text="@string/Alumni1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView23"
+            android:layout_below="@+id/textView22"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="4dp"
+            android:autoLink="all"
+            android:linksClickable="true"/>
+
+        <TextView
+            android:text="@string/PECfest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView24"
+            android:layout_below="@+id/textView23"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="4dp"
+            android:textSize="20sp"
+            android:autoLink="all"
+            android:linksClickable="true"/>
+
+    </LinearLayout>
+</RelativeLayout>

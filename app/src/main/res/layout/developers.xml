@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_developers"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+    </android.support.design.widget.AppBarLayout>
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/gs"
+        android:id="@+id/imageView2" />
+
+    <TextView
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Gaurav Shukla\n+919815490916\n&quot;FrontEnd Designer&quot;"
+        android:id="@+id/textView12"
+        android:layout_gravity="right"
+        android:textColor="#ffffff"
+        android:autoLink="phone"
+
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_marginTop="59dp" />
+
+    <TextView
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nishant Gupta\n+919876501487\n&quot;BackEnd Designer&quot;"
+        android:id="@+id/textView13"
+        android:layout_gravity="right"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:autoLink="phone"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="92dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/imageView3" />
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView3"
+        android:layout_marginTop="42dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/ng"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

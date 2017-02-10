@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_sched"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <TabHost
+        android:layout_width="200dip"
+        android:layout_height="300dip"
+        android:id="@+id/tabHost"
+        android:layout_marginTop="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:tag="hello"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true">
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/DAY1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="360dp"
+                            android:layout_height="237dp">
+
+                            <TextView
+                                android:text="\n\n5pm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/day15"
+                                android:textSize="30dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="0.27" />
+
+                            <TextView
+                                android:layout_width="248dp"
+                                android:layout_height="135dp"
+                                android:id="@+id/day16"
+                                android:textColor="#000"
+                                android:textSize="20sp"
+                                android:text="Hello"
+                                android:fontFamily="sans-serif" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="360dp"
+                            android:layout_height="258dp">
+
+                            <TextView
+                                android:text="\n\n6pm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/Nday15"
+                                android:textSize="30dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="0.24"/>
+
+                            <TextView
+                                android:text="Hello123"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:id="@+id/Nday16"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+                </LinearLayout>
+
+                
+                <LinearLayout
+                    android:id="@+id/DAY2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="360dp"
+                        android:layout_height="237dp">
+
+                        <TextView
+                            android:text="\n\n5pm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/day25"
+                            android:textSize="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="0.27" />
+
+                        <TextView
+                            android:layout_width="248dp"
+                            android:layout_height="135dp"
+                            android:id="@+id/day26"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:text="Hello"
+                            android:fontFamily="sans-serif" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="360dp"
+                        android:layout_height="258dp">
+
+                        <TextView
+                            android:text="\n\n6pm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Nday25"
+                            android:textSize="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="0.24"/>
+
+                        <TextView
+                            android:text="Hello123"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Nday26"
+                            android:textSize="20sp"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/DAY3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="360dp"
+                        android:layout_height="237dp">
+
+                        <TextView
+                            android:text="\n\n5pm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/day35"
+                            android:textSize="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="0.27" />
+
+                        <TextView
+                            android:layout_width="248dp"
+                            android:layout_height="135dp"
+                            android:id="@+id/day36"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:text="Hello"
+                            android:fontFamily="sans-serif" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="360dp"
+                        android:layout_height="258dp">
+
+                        <TextView
+                            android:text="\n\n6pm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Nday35"
+                            android:textSize="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="0.24"/>
+
+                        <TextView
+                            android:text="Hello123"
+                            android:layout_width="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Nday36"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/DAY4"
+                    android:layout_width="match_parent"
+                    android:text="hello"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="360dp"
+                        android:layout_height="237dp">
+
+                        <TextView
+                            android:text="\n\n5pm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/day45"
+                            android:textSize="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="0.27" />
+
+                        <TextView
+                            android:layout_width="248dp"
+                            android:layout_height="135dp"
+                            android:id="@+id/day46"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:text="Hello"
+                            android:fontFamily="sans-serif" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="360dp"
+                        android:layout_height="258dp">
+
+                        <TextView
+                            android:text="\n\n6pm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Nday45"
+                            android:textSize="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="0.24"/>
+
+                        <TextView
+                            android:text="Hello123"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:id="@+id/Nday46"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/DAY5"
+                    android:layout_width="match_parent"
+                    android:text="hello"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="360dp"
+                        android:layout_height="237dp">
+
+                        <TextView
+                            android:text="\n\n5pm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/day55"
+                            android:textSize="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="0.27" />
+
+                        <TextView
+                            android:layout_width="248dp"
+                            android:layout_height="135dp"
+                            android:id="@+id/day56"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:text="Hello"
+                            android:fontFamily="sans-serif" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="360dp"
+                        android:layout_height="258dp">
+
+                        <TextView
+                            android:text="\n\n6pm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Nday55"
+                            android:textSize="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="0.24"/>
+
+                        <TextView
+                            android:text="Hello123"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Nday56"
+                            android:textSize="20sp"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+            </ScrollView>
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>
