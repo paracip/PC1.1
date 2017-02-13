@@ -23,6 +23,7 @@ public class Menu_contacts extends AppCompatActivity {
     TextView contact_dispensary;
     TextView contact_counselor;
     TextView contact_tpo;
+    private static FirebaseDatabase mDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +32,16 @@ public class Menu_contacts extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_menu_contacts);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
+    }
+    public static FirebaseDatabase getDatabase() {
+        if (mDatabase == null) {
+            mDatabase = FirebaseDatabase.getInstance();
+            mDatabase.setPersistenceEnabled(true);
+        }
         FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+        return mDatabase;
     }
     @Override
     protected void onStart(){

@@ -33,6 +33,7 @@ public class Sched1 extends AppCompatActivity {
     TextView Day46pm;
     TextView Day55pm;
     TextView Day56pm;
+    private static FirebaseDatabase mDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +46,6 @@ public class Sched1 extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         TabHost host = (TabHost) findViewById(tabHost);
         host.setup();
-        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
         //Tab 1
         TabHost.TabSpec spec = host.newTabSpec("Tab One");
         spec.setContent(R.id.DAY1);
@@ -77,7 +77,14 @@ public class Sched1 extends AppCompatActivity {
         host.addTab(spec);
 
     }
-
+    public static FirebaseDatabase getDatabase() {
+        if (mDatabase == null) {
+            mDatabase = FirebaseDatabase.getInstance();
+            mDatabase.setPersistenceEnabled(true);
+        }
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+        return mDatabase;
+    }
     @Override
     protected void onStart(){
         super.onStart();

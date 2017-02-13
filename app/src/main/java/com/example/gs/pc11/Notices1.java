@@ -19,6 +19,7 @@ public class Notices1 extends AppCompatActivity {
     TextView N1;
     TextView N2;
     TextView N3;
+    private static FirebaseDatabase mDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,9 +28,16 @@ public class Notices1 extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_notices);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
+    }
+    public static FirebaseDatabase getDatabase() {
+        if (mDatabase == null) {
+            mDatabase = FirebaseDatabase.getInstance();
+            mDatabase.setPersistenceEnabled(true);
+        }
         FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+        return mDatabase;
     }
     @Override
     protected void onStart() {

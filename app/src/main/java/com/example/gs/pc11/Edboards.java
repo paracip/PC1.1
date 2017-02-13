@@ -19,6 +19,8 @@ public class Edboards extends AppCompatActivity {
     TextView hindied;
     TextView englished;
     TextView punjabied;
+    private static FirebaseDatabase mDatabase;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,9 +30,16 @@ public class Edboards extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
-    }
 
+    }
+    public static FirebaseDatabase getDatabase() {
+        if (mDatabase == null) {
+            mDatabase = FirebaseDatabase.getInstance();
+            mDatabase.setPersistenceEnabled(true);
+        }
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+        return mDatabase;
+    }
     @Override
     protected void onStart() {
         super.onStart();

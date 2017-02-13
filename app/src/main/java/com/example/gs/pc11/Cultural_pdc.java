@@ -18,7 +18,9 @@ import com.google.firebase.database.ValueEventListener;
 
 public class Cultural_pdc  extends AppCompatActivity {
     TextView pdc_content;
-    TextView pdc_contact;    
+    TextView pdc_contact;
+    private static FirebaseDatabase mDatabase;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +29,15 @@ public class Cultural_pdc  extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+    }
+    public static FirebaseDatabase getDatabase() {
+        if (mDatabase == null) {
+            mDatabase = FirebaseDatabase.getInstance();
+            mDatabase.setPersistenceEnabled(true);
+        }
         FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+        return mDatabase;
     }
     @Override
     protected void onStart() {

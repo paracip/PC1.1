@@ -10,11 +10,11 @@ public class Database {
 
     private static FirebaseDatabase mDatabase;
 
-    public Database() {
+    public static FirebaseDatabase getDatabase() {
         if (mDatabase == null) {
             mDatabase = FirebaseDatabase.getInstance();
             mDatabase.setPersistenceEnabled(true);
         }
-        return;
+        return mDatabase;
     }
 }

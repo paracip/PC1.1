@@ -17,6 +17,8 @@ import com.google.firebase.database.ValueEventListener;
 public class NSS extends AppCompatActivity {
     TextView nss_content;
     TextView nss_contact;
+    private static FirebaseDatabase mDatabase;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,11 +26,18 @@ public class NSS extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_nss);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
-    }
+        getSupportActionBar().setHomeButtonEnabled(true);
 
+    }
+    public static FirebaseDatabase getDatabase() {
+        if (mDatabase == null) {
+            mDatabase = FirebaseDatabase.getInstance();
+            mDatabase.setPersistenceEnabled(true);
+        }
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+        return mDatabase;
+    }
     @Override
     protected void onStart() {
         super.onStart();
