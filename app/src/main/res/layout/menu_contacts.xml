@@ -247,7 +247,7 @@
                     android:layout_alignStart="@+id/textView17"
                     android:layout_marginTop="3dp"
                     android:id="@+id/imageView12"
-                    android:layout_marginLeft="2dp"
+                    android:layout_marginLeft="4dp"
                     android:layout_weight="0.29" />
 
                 <TextView

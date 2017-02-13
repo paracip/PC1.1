@@ -62,7 +62,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="383dp"
+                android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="The National Service Scheme (NSS) is a Government of India public service program conducted by the Department of Youth Affairs and Sports, Government of India.
 In PEC, the programme aims to inculcate social welfare in students, and to provide service to society without bias. NSS volunteers work to ensure that everyone who is needy gets help to enhance their standard of living and lead a life of dignity. In doing so, volunteers learn from people in villages how to lead a good life despite a scarcity of resources. NSS unit of PEC has adopted villages and colonies near the Institute."
